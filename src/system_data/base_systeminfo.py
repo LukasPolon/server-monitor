@@ -55,7 +55,7 @@ class BaseSystemInfo(ABC):
         """
         try:
             with open(self.file_path, 'r') as data_file:
-                data = data_file.readlines()
+                data = [line.strip() for line in data_file.readlines()]
         except IOError:
             raise SystemFileReadError(
                 f'Error during reading file: {self.file_path}'
