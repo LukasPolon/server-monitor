@@ -22,6 +22,11 @@
 ##
 #######################################
 -->
+0.0.2 (11/04/2019)
+------------------
+* Changed: added stripping the lines from file
+* Added: src.system_data.meminfo module for obtaining a memory data
+
 0.0.1 (11/04/2019)
 ------------------
 * Added: CHANGELOG.md, requirements.txt files
